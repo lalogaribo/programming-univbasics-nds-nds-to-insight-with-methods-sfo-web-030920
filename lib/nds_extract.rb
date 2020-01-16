@@ -9,11 +9,11 @@ require 'directors_database'
 # using director_data as input
 def gross_for_director(director_data)
   worldwide_grosses = 0
-  pp director_data
+  # pp director_data
   director_data[:movies].each do |movie|
     worldwide_gross += movie[:worldwide_gross]
   end
-  worldwide_gross
+  puts worldwide_gross
 end
 
 # Write a method that, given an NDS creates a new Hash
