@@ -1,6 +1,11 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 print directors_database.length
+# director = [
+#{name: "Eduardo", movies: ["1","2","3"]},
+#{name: "Eduardo", movies: ["1","2","3"]}, 
+#{name: "Eduardo", movies: ["1","2","3"]}
+]
 pp directors_database
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
