@@ -6,8 +6,11 @@ require 'directors_database'
 def gross_for_director(director_data)
   worldwide_grosses = 0
   director_data.each do |director|
-    
+    director[:movies].each do |movie|
+      worldwide_gross += movie[:worldwide_gross]
+    end
   end
+  worldwide_gross
 end
 
 # Write a method that, given an NDS creates a new Hash
@@ -16,5 +19,6 @@ end
 # { directorOne => allTheMoneyTheyMade, ... }
 def directors_totals(nds)
   result = {}
-  nil
+  
+  
 end
