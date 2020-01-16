@@ -1,6 +1,5 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
-print directors_database.length
 # director = [
 #{name: "Eduardo", movies: ["1","2","3"]},
 #{name: "Eduardo", movies: ["1","2","3"]}, 
@@ -10,6 +9,7 @@ print directors_database.length
 # using director_data as input
 def gross_for_director(director_data)
   worldwide_grosses = 0
+  pp director_data
   director_data[:movies].each do |movie|
     worldwide_gross += movie[:worldwide_gross]
   end
